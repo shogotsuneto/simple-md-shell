@@ -8412,7 +8412,7 @@ relateurl@0.2.x:
 
 "remark-aozora-ruby@https://github.com/shogotsuneto/remark-aozora-ruby.git":
   version "0.1.0"
-  resolved "https://github.com/shogotsuneto/remark-aozora-ruby.git#780087a820784488a49a0088f2de75f43bafb02c"
+  resolved "https://github.com/shogotsuneto/remark-aozora-ruby.git#30bb8d5f98754973553862f0e40c514936296203"
 
 remark-parse@^7.0.1:
   version "7.0.1"
