@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/simple-md-shell/static/css/main.126fe567.chunk.css",
-    "main.js": "/simple-md-shell/static/js/main.ff63e1a5.chunk.js",
-    "main.js.map": "/simple-md-shell/static/js/main.ff63e1a5.chunk.js.map",
+    "main.js": "/simple-md-shell/static/js/main.88d99525.chunk.js",
+    "main.js.map": "/simple-md-shell/static/js/main.88d99525.chunk.js.map",
     "runtime~main.js": "/simple-md-shell/static/js/runtime~main.b8257422.js",
     "runtime~main.js.map": "/simple-md-shell/static/js/runtime~main.b8257422.js.map",
-    "static/js/2.4cf1661f.chunk.js": "/simple-md-shell/static/js/2.4cf1661f.chunk.js",
-    "static/js/2.4cf1661f.chunk.js.map": "/simple-md-shell/static/js/2.4cf1661f.chunk.js.map",
+    "static/js/2.dc830d14.chunk.js": "/simple-md-shell/static/js/2.dc830d14.chunk.js",
+    "static/js/2.dc830d14.chunk.js.map": "/simple-md-shell/static/js/2.dc830d14.chunk.js.map",
     "index.html": "/simple-md-shell/index.html",
-    "precache-manifest.af743c348e96d2c97f5d37d9b124f9ce.js": "/simple-md-shell/precache-manifest.af743c348e96d2c97f5d37d9b124f9ce.js",
+    "precache-manifest.402357264f3dc5a0498597de1095e415.js": "/simple-md-shell/precache-manifest.402357264f3dc5a0498597de1095e415.js",
     "service-worker.js": "/simple-md-shell/service-worker.js",
-    "static/css/main.126fe567.chunk.css.map": "/simple-md-shell/static/css/main.126fe567.chunk.css.map",
-    "static/media/logo.svg": "/simple-md-shell/static/media/logo.5d5d9eef.svg"
+    "static/css/main.126fe567.chunk.css.map": "/simple-md-shell/static/css/main.126fe567.chunk.css.map"
   }
 }
