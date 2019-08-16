@@ -1,10 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import unified from 'unified'
 import parse from 'remark-parse'
-import remark2react from 'remark-react'
+import remarkAozoraRuby from 'remark-aozora-ruby'
+import remark2rehype from 'remark-rehype'
+import rehype2react from 'rehype-react'
 import styles from '../styles/Shell.module.css'
 
-const createMarkDownElements = (text) => unified().use(parse).use(remark2react).processSync(text).contents
+const createMarkDownElements = text => (
+  unified()
+    .use(parse)
+    .use(remarkAozoraRuby)
+    .use(remark2rehype)
+    .use(rehype2react, { createElement: React.createElement})
+    .processSync(text).contents
+)
 
 const Container = ({owner, repo}) => {
   const [text, setText] = useState('')
