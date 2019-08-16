@@ -1,0 +1,13 @@
+.header {
+  margin: auto;
+  line-height: 2em;
+  max-width: 800px;
+  background-color: antiquewhite;
+}
+
+.container {
+  margin: auto;
+  padding: 1em 0;
+  border: 1px solid black;
+  max-width: 800px;
+}
