@@ -8,7 +8,9 @@
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
     "rehype-react": "^4.0.1",
+    "rehype-sanitize": "^3.0.0",
     "remark-aozora-ruby": "https://github.com/shogotsuneto/remark-aozora-ruby.git",
+    "remark-breaks": "^1.0.3",
     "remark-parse": "^7.0.1",
     "remark-rehype": "^5.0.0",
     "unified": "^8.3.2"
