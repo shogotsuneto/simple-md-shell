@@ -8424,9 +8424,9 @@ relateurl@0.2.x:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
-"remark-aozora-ruby@https://github.com/shogotsuneto/remark-aozora-ruby.git":
+"remark-aozora-ruby@https://github.com/shogotsuneto/remark-aozora-ruby.git#no-unicode-properties":
   version "0.1.0"
-  resolved "https://github.com/shogotsuneto/remark-aozora-ruby.git#1a14080ad3c32891937a37cd7dd4a4d79b4feea6"
+  resolved "https://github.com/shogotsuneto/remark-aozora-ruby.git#cba24d2ff5346d0a99c03a5f27c74acd60289eba"
 
 remark-breaks@^1.0.3:
   version "1.0.3"
