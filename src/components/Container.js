@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import mdToComponents from '../processor/mdToComponents'
+import createMd2React from '../processor/createMd2React'
 import styles from '../styles/Shell.module.css'
 
 import section from './contents/section'
 
-const createMarkDownElements = text => (
-  mdToComponents({ createElement: React.createElement, components: { section }})
-    .process(text)
-)
+const md2React = createMd2React({ createElement: React.createElement, components: { section }})
 
 const Container = ({owner, repo}) => {
   const [raw, setRaw] = useState('')
@@ -18,7 +15,7 @@ const Container = ({owner, repo}) => {
       .then(data => setRaw(data))
   }, [owner, repo])
   useEffect(() => {
-    createMarkDownElements(raw).then(({contents}) => setContents(contents))
+    md2React.process(raw).then(({contents}) => setContents(contents))
   }, [raw])
   return <div className={styles.container}>{contents}</div>
 }
