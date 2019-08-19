@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import mdToComponents from '../processor/mdToComponents'
 import styles from '../styles/Shell.module.css'
 
+import section from './contents/section'
+
 const createMarkDownElements = text => (
-  mdToComponents(React.createElement)
+  mdToComponents({ createElement: React.createElement, components: { section }})
     .process(text)
 )
 

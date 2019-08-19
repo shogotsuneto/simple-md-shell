@@ -10,7 +10,7 @@ import gh from 'hast-util-sanitize/lib/github'
 
 const schema = { ...gh, tagNames: [...gh.tagNames, 'section']}
 
-export default (createElement) => (
+export default ({ createElement, components }) => (
   unified()
     .use(parse)
     .use(sectionize)
@@ -18,5 +18,5 @@ export default (createElement) => (
     .use(remarkBreaks)
     .use(remark2rehype)
     .use(sanitize, schema)
-    .use(rehype2react, { createElement })
+    .use(rehype2react, { createElement, components })
 )
