@@ -8,16 +8,16 @@ const createMarkDownElements = text => (
 )
 
 const Container = ({owner, repo}) => {
-  const [text, setText] = useState('')
-  const [contents, setContent] = useState('')
+  const [raw, setRaw] = useState('')
+  const [contents, setContents] = useState(null)
   useEffect(() => {
     fetch(`https://raw.githubusercontent.com/${owner}/${repo}/master/kokoro.md`)
       .then(response => response.text())
-      .then(data => setText(data))
+      .then(data => setRaw(data))
   }, [owner, repo])
   useEffect(() => {
-    createMarkDownElements(text).then(({contents}) => setContent(contents))
-  }, [text])
+    createMarkDownElements(raw).then(({contents}) => setContents(contents))
+  }, [raw])
   return <div className={styles.container}>{contents}</div>
 }
 
