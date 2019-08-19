@@ -19,4 +19,5 @@ export default ({ createElement, components }) => (
     .use(remark2rehype)
     .use(sanitize, schema)
     .use(rehype2react, { createElement, components })
+    .freeze()
 )
