@@ -1,26 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import unified from 'unified'
-import parse from 'remark-parse'
-import sectionize from 'remark-sectionize'
-import remarkBreaks from 'remark-breaks'
-import remarkAozoraRuby from 'remark-aozora-ruby'
-import remark2rehype from 'remark-rehype'
-import sanitize from 'rehype-sanitize'
-import gh from 'hast-util-sanitize/lib/github'
-import rehype2react from 'rehype-react'
+import mdToComponents from '../processor/mdToComponents'
 import styles from '../styles/Shell.module.css'
 
-const schema = { ...gh, tagNames: [...gh.tagNames, 'section']}
-
 const createMarkDownElements = text => (
-  unified()
-    .use(parse)
-    .use(sectionize)
-    .use(remarkAozoraRuby)
-    .use(remarkBreaks)
-    .use(remark2rehype)
-    .use(sanitize, schema)
-    .use(rehype2react, { createElement: React.createElement})
+  mdToComponents(React.createElement)
     .process(text)
 )
 
