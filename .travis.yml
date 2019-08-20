@@ -1,7 +1,28 @@
+language: node_js
+node_js:
+  - 'stable'
+  - 'lts/*'
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+  - master
+
+install:
+  - yarn
+
+script:
+  - yarn run build
+
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
+  target_branch: gh-pages
+  local_dir: build
   on:
     branch: master
