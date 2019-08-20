@@ -15,7 +15,10 @@ install:
   - yarn
 
 script:
-  - yarn run build
+  - yarn test
+
+before_deploy:
+  - yarn build
 
 deploy:
   provider: pages
