@@ -4,16 +4,12 @@
   "private": true,
   "homepage": "http://shogotsuneto.github.io/simple-md-shell",
   "dependencies": {
-    "hast-util-sanitize": "^2.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "rehype-react": "^4.0.1",
-    "rehype-sanitize": "^3.0.0",
     "remark-aozora-ruby": "https://github.com/shogotsuneto/remark-aozora-ruby.git#no-unicode-properties",
     "remark-breaks": "^1.0.3",
     "remark-parse": "^7.0.1",
-    "remark-rehype": "^5.0.0",
     "remark-sectionize": "^1.0.1",
     "unified": "^8.3.2"
   },
