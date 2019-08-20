@@ -4,7 +4,7 @@ import Heading from './Heading'
 
 const components = {
   root: ({children}) => <React.Fragment>{renderChildren(children)}</React.Fragment>,
-  section: ({children}) => <Section>{renderChildren(children)}</Section>,
+  section: ({depth, children}) => <Section depth={depth}>{renderChildren(children)}</Section>,
   heading: ({depth, children}) => <Heading depth={depth}>{renderChildren(children)}</Heading>,
   text: ({value}) => `${value}`,
   paragraph: ({children}) => <p>{renderChildren(children)}</p>,

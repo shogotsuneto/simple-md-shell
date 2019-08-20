@@ -1,3 +1,23 @@
-section > .section {
+.heading1 {
+  text-align: center
+}
+
+.heading2 {
+  text-align: center
+}
+
+.heading3 {
+  text-align: center
+}
+
+.section1 {
+  text-align: right
+}
+
+.section2 {
+  text-align: center
+}
+
+.section3 {
   text-align: left
 }
