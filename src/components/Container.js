@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from 'react'
-import createMd2React from '../processor/createMd2React'
+import Tree from './contents/Tree'
+import parseMarkdown from '../processor/parseMarkdown'
 import styles from '../styles/Shell.module.css'
-
-import section from './contents/section'
-
-const md2React = createMd2React({ createElement: React.createElement, components: { section }})
 
 const Container = ({owner, repo}) => {
   const [raw, setRaw] = useState('')
-  const [contents, setContents] = useState(null)
+  const [node, setNode] = useState({})
   useEffect(() => {
     fetch(`https://raw.githubusercontent.com/${owner}/${repo}/master/kokoro.md`)
       .then(response => response.text())
       .then(data => setRaw(data))
   }, [owner, repo])
   useEffect(() => {
-    md2React.process(raw).then(({contents}) => setContents(contents))
+    parseMarkdown.run(parseMarkdown.parse(raw)).then(node => {
+      setNode(node)
+    })
   }, [raw])
-  return <div className={styles.container}>{contents}</div>
+  return <div className={styles.container}><Tree node={node} /></div>
 }
 
 export default Container
