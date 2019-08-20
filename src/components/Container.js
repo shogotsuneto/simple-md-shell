@@ -13,7 +13,6 @@ const Container = ({owner, repo}) => {
   }, [owner, repo])
   useEffect(() => {
     parseMarkdown.run(parseMarkdown.parse(raw)).then(node => {
-      console.log(node)
       setNode(node)
     })
   }, [raw])
