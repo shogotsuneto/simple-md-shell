@@ -7,7 +7,7 @@
 }
 
 .heading3 {
-  text-align: center
+  text-align: left
 }
 
 .section1 {
@@ -19,5 +19,17 @@
 }
 
 .section3 {
+  text-align: left
+}
+
+.section1 > p {
+  text-align: center
+}
+
+.section2 > p {
+  text-align: left
+}
+
+.section3 > p {
   text-align: left
 }
