@@ -8360,10 +8360,9 @@ remark-parse@^7.0.1:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
-remark-sectionize@^1.0.1:
+"remark-sectionize@https://github.com/shogotsuneto/remark-sectionize.git#with-depth":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/remark-sectionize/-/remark-sectionize-1.0.1.tgz#9116d892eefd4a625e7ab9858e2dd217cdb685ac"
-  integrity sha512-C8lBqGI2p70tRCW0ZKSrTDDDjANVL/m0LzXG9b88VQo9x6828eK5m/YpHGxtojeHnIfPc5J/EABusMYOxQMxJQ==
+  resolved "https://github.com/shogotsuneto/remark-sectionize.git#3380bb501f5448c55279c1a7c93989380cb16f0a"
   dependencies:
     unist-util-find-after "^2.0.2"
     unist-util-visit-parents "^2.0.1"
