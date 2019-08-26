@@ -3,14 +3,14 @@ import Tree from './contents/Tree'
 import parseMarkdown from '../processor/parseMarkdown'
 import styles from '../styles/Shell.module.css'
 
-const Container = ({owner, repo, branch, filename}) => {
+const Container = ({owner, repo, branch, filepath}) => {
   const [raw, setRaw] = useState('')
   const [node, setNode] = useState({})
   useEffect(() => {
-    fetch(`https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filename}`)
+    fetch(`https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filepath}`)
       .then(response => response.text())
       .then(data => setRaw(data))
-  }, [owner, repo, branch, filename])
+  }, [owner, repo, branch, filepath])
   useEffect(() => {
     parseMarkdown.run(parseMarkdown.parse(raw)).then(node => {
       setNode(node)
