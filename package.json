@@ -10,7 +10,7 @@
     "remark-aozora-ruby": "https://github.com/shogotsuneto/remark-aozora-ruby.git#no-unicode-properties",
     "remark-breaks": "^1.0.3",
     "remark-parse": "^7.0.1",
-    "remark-sectionize": "https://github.com/shogotsuneto/remark-sectionize.git#with-depth",
+    "remark-sectionize": "^1.1.0",
     "unified": "^8.3.2"
   },
   "scripts": {
