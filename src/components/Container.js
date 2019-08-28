@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Tree from './contents/Tree'
-import parseMarkdown from '../processor/parseMarkdown'
+import processor from '../processor/markdownProcessor'
 import styles from '../styles/Shell.module.css'
 
 const Container = ({owner, repo, branch, filepath}) => {
@@ -12,7 +12,7 @@ const Container = ({owner, repo, branch, filepath}) => {
       .then(data => setRaw(data))
   }, [owner, repo, branch, filepath])
   useEffect(() => {
-    parseMarkdown.run(parseMarkdown.parse(raw)).then(node => {
+    processor.run(processor.parse(raw)).then(node => {
       setNode(node)
     })
   }, [raw])
