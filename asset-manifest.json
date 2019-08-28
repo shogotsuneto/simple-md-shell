@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/simple-md-shell/static/css/main.83e1797a.chunk.css",
-    "main.js": "/simple-md-shell/static/js/main.8ca615a7.chunk.js",
-    "main.js.map": "/simple-md-shell/static/js/main.8ca615a7.chunk.js.map",
+    "main.js": "/simple-md-shell/static/js/main.63a08493.chunk.js",
+    "main.js.map": "/simple-md-shell/static/js/main.63a08493.chunk.js.map",
     "runtime~main.js": "/simple-md-shell/static/js/runtime~main.f56f099c.js",
     "runtime~main.js.map": "/simple-md-shell/static/js/runtime~main.f56f099c.js.map",
     "static/js/2.6df5e44b.chunk.js": "/simple-md-shell/static/js/2.6df5e44b.chunk.js",
     "static/js/2.6df5e44b.chunk.js.map": "/simple-md-shell/static/js/2.6df5e44b.chunk.js.map",
     "index.html": "/simple-md-shell/index.html",
-    "precache-manifest.2da860548103841cf7cec08636ebffe1.js": "/simple-md-shell/precache-manifest.2da860548103841cf7cec08636ebffe1.js",
+    "precache-manifest.ea20ea5bfe46816c0c3d6e29b4601c37.js": "/simple-md-shell/precache-manifest.ea20ea5bfe46816c0c3d6e29b4601c37.js",
     "service-worker.js": "/simple-md-shell/service-worker.js",
     "static/css/main.83e1797a.chunk.css.map": "/simple-md-shell/static/css/main.83e1797a.chunk.css.map"
   }
