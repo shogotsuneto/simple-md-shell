@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders breaks 1`] = `
+<p>
+  paragraph
+  <br />
+  should break
+  <br />
+  should break
+</p>
+`;
+
+exports[`it renders headers 1`] = `
+<section
+  className="section1"
+>
+  <h1
+    className="heading1"
+  >
+    Header1
+  </h1>
+  <section
+    className="section2"
+  >
+    <h2
+      className="heading2"
+    >
+      Header2
+    </h2>
+    <section
+      className="section3"
+    >
+      <h3
+        className="heading3"
+      >
+        Header3
+      </h3>
+      <section
+        className="section4"
+      >
+        <h4
+          className="heading4"
+        >
+          Header4
+        </h4>
+        <section
+          className="section5"
+        >
+          <h5
+            className="heading5"
+          >
+            Header5
+          </h5>
+          <section
+            className="section6"
+          >
+            <h6
+              className="heading6"
+            >
+              Header6
+            </h6>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`it renders paragraphs 1`] = `
+Array [
+  <p>
+    paragraph 1
+  </p>,
+  <p>
+    paragraph 2
+  </p>,
+]
+`;
+
+exports[`it renders ruby 1`] = `
+<p>
+  <ruby>
+    振仮名
+    <rt>
+      ふりがな
+    </rt>
+  </ruby>
+  のテスト。
+</p>
+`;
