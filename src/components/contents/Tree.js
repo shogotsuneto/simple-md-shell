@@ -1,24 +1,37 @@
 import React from 'react'
 import Section from './Section'
 import Heading from './Heading'
-import Table from './Table'
+// import Table from './Table'
 
 const components = {
-  root: ({childNodes}) => <React.Fragment>{renderChildNodes(childNodes)}</React.Fragment>,
-  section: ({depth, childNodes}) => <Section depth={depth}>{renderChildNodes(childNodes)}</Section>,
-  heading: ({depth, childNodes}) => <Heading depth={depth}>{renderChildNodes(childNodes)}</Heading>,
-  text: ({value}) => `${value}`,
-  paragraph: ({childNodes}) => <p>{renderChildNodes(childNodes)}</p>,
-  ruby: ({base, text}) => <ruby>{base}<rt>{text}</rt></ruby>,
+  root: ({ node: { children } }) => (
+    <React.Fragment>{renderChildNodes(children)}</React.Fragment>
+  ),
+  section: ({ node: { depth, children } }) => (
+    <Section depth={depth}>{renderChildNodes(children)}</Section>
+  ),
+  heading: ({ node: { depth, children } }) => (
+    <Heading depth={depth}>{renderChildNodes(children)}</Heading>
+  ),
+  text: ({ node: { value } }) => `${value}`,
+  paragraph: ({ node: { children } }) => <p>{renderChildNodes(children)}</p>,
+  ruby: ({ node: { base, text } }) => (
+    <ruby>
+      {base}
+      <rt>{text}</rt>
+    </ruby>
+  ),
   break: () => <br />,
-  // table: ({align, childNodes}) => <Table align={align} childNodes={childNodes} renderChildNodes={Tree} />
+  // table: ({ node }) => <Table node={node} renderChild={Tree} />
 }
 
-const renderChildNodes = childNodes => childNodes.map((node, index) => <Tree key={`${index}`} node={node} />)
+const renderChildNodes = children =>
+  children.map((node, index) => <Tree key={`${index}`} node={node} />)
 
-const Tree = ({node}) => {
-  const { children: childNodes, ...nodeAttributes} = node
-  return components[node.type] ? React.createElement(components[node.type], {...nodeAttributes, childNodes}) : null
+const Tree = ({ node }) => {
+  return components[node.type]
+    ? React.createElement(components[node.type], { node })
+    : null
 }
 
 export default Tree
