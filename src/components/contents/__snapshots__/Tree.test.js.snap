@@ -89,3 +89,46 @@ exports[`it renders ruby 1`] = `
   のテスト。
 </p>
 `;
+
+exports[`it renders table 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        className="cell-align-left"
+      >
+        foo
+      </th>
+      <th
+        className="cell-align-center"
+      >
+        bar
+      </th>
+      <th
+        className="cell-align-null"
+      >
+        baz
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        className="cell-align-left"
+      >
+        qux
+      </td>
+      <td
+        className="cell-align-center"
+      >
+        quux
+      </td>
+      <td
+        className="cell-align-null"
+      >
+        corge
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
