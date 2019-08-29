@@ -29,6 +29,12 @@ const ruby = `
 振仮名《ふりがな》のテスト。
 `
 
+const table = `
+| foo | bar | baz |
+| :-- | :-: |  -   |
+| qux | quux | corge |
+`
+
 const md2React = mdText =>
   processor
     .run(processor.parse(mdText))
@@ -48,4 +54,8 @@ test('it renders breaks', () => {
 
 test('it renders ruby', () => {
   md2React(ruby).then(tree => expect(tree).toMatchSnapshot())
+})
+
+test('it renders table', () => {
+  md2React(table).then(tree => expect(tree).toMatchSnapshot())
 })
