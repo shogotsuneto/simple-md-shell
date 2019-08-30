@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf5d597b4199c31f653e0547668d479e",
+    "revision": "83d7287364a310829129fb501fe6f6a2",
     "url": "/simple-md-shell/index.html"
   },
   {
-    "revision": "df3c7b7b61477b0d31c5",
+    "revision": "34448f154b6baf5f961a",
     "url": "/simple-md-shell/static/css/main.83e1797a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-md-shell/static/js/2.d955f7e5.chunk.js"
   },
   {
-    "revision": "df3c7b7b61477b0d31c5",
-    "url": "/simple-md-shell/static/js/main.8d405da6.chunk.js"
+    "revision": "34448f154b6baf5f961a",
+    "url": "/simple-md-shell/static/js/main.b3527b65.chunk.js"
   },
   {
     "revision": "75756dbc8c96899a9400",
