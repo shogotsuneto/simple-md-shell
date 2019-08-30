@@ -2,6 +2,7 @@ import React from 'react'
 import Section from './Section'
 import Heading from './Heading'
 import Table from './Table'
+import Code from './Code'
 
 const components = {
   root: ({ node: { children } }) => (
@@ -22,7 +23,8 @@ const components = {
     </ruby>
   ),
   break: () => <br />,
-  table: ({ node }) => <Table node={node} renderChild={({node}) => <Tree node={node} />} />
+  table: ({ node }) => <Table node={node} renderChild={({node}) => <Tree node={node} />} />,
+  code: ({ node: { value, lang } }) => <Code language={lang} codeString={value} />
 }
 
 const renderChildNodes = children =>

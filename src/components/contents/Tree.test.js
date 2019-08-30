@@ -35,6 +35,15 @@ const table = `
 | qux | ｜quux《nested》 | corge |
 `
 
+const codeblock = [
+  '```js',
+  'const md2React = mdText =>',
+  '  processor',
+  '    .run(processor.parse(mdText))',
+  '    .then(node => renderer.create(<Tree node={node} />).toJSON())',
+  '```'
+].join('\n')
+
 const md2React = mdText =>
   processor
     .run(processor.parse(mdText))
@@ -58,4 +67,8 @@ test('it renders ruby', () => {
 
 test('it renders table', () => {
   md2React(table).then(tree => expect(tree).toMatchSnapshot())
+})
+
+test('it renders codeblock', () => {
+  md2React(codeblock).then(tree => expect(tree).toMatchSnapshot())
 })

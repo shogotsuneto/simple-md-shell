@@ -7,6 +7,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
+    "react-syntax-highlighter": "^11.0.2",
     "remark-aozora-ruby": "https://github.com/shogotsuneto/remark-aozora-ruby.git#no-unicode-properties",
     "remark-breaks": "^1.0.3",
     "remark-parse": "^7.0.1",
@@ -18,7 +19,7 @@
     "build": "react-scripts build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!(react-syntax-highlighter/dist/esm/))/\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
