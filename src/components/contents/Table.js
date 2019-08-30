@@ -21,7 +21,7 @@ const components = {
     const tag = isHead ? 'th' : 'td'
     return React.createElement(
       tag,
-      { className: styles[`cell-align-${align}`] },
+      { className: styles[`table-cell-${align}`] },
       children.map((node, index) => (
         <TableComponent
           node={node}

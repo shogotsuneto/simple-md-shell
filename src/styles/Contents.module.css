@@ -1,35 +1,71 @@
 .heading1 {
-  text-align: center
+  text-align: center;
 }
 
 .heading2 {
-  text-align: center
+  text-align: center;
 }
 
 .heading3 {
-  text-align: left
+  text-align: left;
 }
 
 .section1 {
-  text-align: right
+  text-align: right;
 }
 
 .section2 {
-  text-align: center
+  text-align: center;
 }
 
 .section3 {
-  text-align: left
+  text-align: left;
 }
 
 .section1 > p {
-  text-align: center
+  text-align: center;
 }
 
 .section2 > p {
-  text-align: left
+  text-align: left;
 }
 
 .section3 > p {
-  text-align: left
+  text-align: left;
+}
+
+table {
+  border-style: solid;
+  border-width: medium;
+  border-collapse: collapse;
+  margin: 10pt auto;
+}
+
+thead {
+  border-bottom-style: double;
+  border-width: medium;
+}
+
+th {
+  border-style: dotted;
+  border-width: thin;
+  padding: 7pt;
+}
+
+td {
+  border-style: dotted;
+  border-width: thin;
+  padding: 3pt 7pt;
+}
+
+.table-cell-left {
+  text-align: left;
+}
+
+.table-cell-center {
+  text-align: center;
+}
+
+.table-cell-right {
+  text-align: right;
 }
