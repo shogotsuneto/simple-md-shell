@@ -95,17 +95,17 @@ exports[`it renders table 1`] = `
   <thead>
     <tr>
       <th
-        className="cell-align-left"
+        className="table-cell-left"
       >
         foo
       </th>
       <th
-        className="cell-align-center"
+        className="table-cell-center"
       >
         bar
       </th>
       <th
-        className="cell-align-null"
+        className="table-cell-null"
       >
         baz
       </th>
@@ -114,12 +114,12 @@ exports[`it renders table 1`] = `
   <tbody>
     <tr>
       <td
-        className="cell-align-left"
+        className="table-cell-left"
       >
         qux
       </td>
       <td
-        className="cell-align-center"
+        className="table-cell-center"
       >
         <ruby>
           quux
@@ -129,7 +129,7 @@ exports[`it renders table 1`] = `
         </ruby>
       </td>
       <td
-        className="cell-align-null"
+        className="table-cell-null"
       >
         corge
       </td>
