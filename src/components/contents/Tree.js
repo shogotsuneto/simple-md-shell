@@ -24,11 +24,7 @@ const components = {
   ),
   break: () => <br />,
   table: ({ node }) => <Table node={node} renderChild={({node}) => <Tree node={node} />} />,
-  code: ({ node }) => {
-    const { value, lang } = node
-    console.log(node)
-    return <Code language={lang} codeString={value} />
-  }
+  code: ({ node: { value, lang } }) => <Code language={lang} codeString={value} />
 }
 
 const renderChildNodes = children =>
