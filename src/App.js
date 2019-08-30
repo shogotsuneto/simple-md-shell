@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Header from './components/Header'
 import TableOfContents from './components/TableOfContents';
 import Container from './components/Container'
-import './App.css';
 
 const owner = "shogotsuneto"
 const repo = "md-contents"

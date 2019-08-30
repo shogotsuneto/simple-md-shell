@@ -1,8 +1,17 @@
 .header {
+  text-align: center;
   margin: auto;
   line-height: 2;
   max-width: 800px;
   background-color: antiquewhite;
+}
+
+.tableOfContents {
+  text-align: center;
+  margin: auto;
+  padding: 1em 0.3em;
+  line-height: 2;
+  max-width: 800px;
 }
 
 .container {
