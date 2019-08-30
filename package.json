@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!(react-syntax-highlighter/dist/esm/))/\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

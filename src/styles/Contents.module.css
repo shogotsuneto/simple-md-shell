@@ -57,3 +57,9 @@ td {
 .table-cell-right {
   text-align: right;
 }
+
+.codeblock-container {
+  width: 90%;
+  padding: 10pt;
+  margin: 0 auto;
+}

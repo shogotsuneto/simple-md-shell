@@ -10,6 +10,378 @@ exports[`it renders breaks 1`] = `
 </p>
 `;
 
+exports[`it renders codeblock 1`] = `
+<div
+  className="codeblock-container"
+>
+  <pre
+    style={
+      Object {
+        "MozHyphens": "none",
+        "MozTabSize": "4",
+        "OTabSize": "4",
+        "WebkitHyphens": "none",
+        "backgroundColor": "#fdf6e3",
+        "borderRadius": "0.3em",
+        "color": "#657b83",
+        "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+        "hyphens": "none",
+        "lineHeight": "1.5",
+        "margin": ".5em 0",
+        "msHyphens": "none",
+        "overflow": "auto",
+        "padding": "1em",
+        "tabSize": "4",
+        "textAlign": "left",
+        "whiteSpace": "pre",
+        "wordBreak": "normal",
+        "wordSpacing": "normal",
+        "wordWrap": "normal",
+      }
+    }
+  >
+    <code
+      style={
+        Object {
+          "MozHyphens": "none",
+          "MozTabSize": "4",
+          "OTabSize": "4",
+          "WebkitHyphens": "none",
+          "color": "#657b83",
+          "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+          "hyphens": "none",
+          "lineHeight": "1.5",
+          "msHyphens": "none",
+          "tabSize": "4",
+          "textAlign": "left",
+          "whiteSpace": "pre",
+          "wordBreak": "normal",
+          "wordSpacing": "normal",
+          "wordWrap": "normal",
+        }
+      }
+    >
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#859900",
+          }
+        }
+      >
+        const
+      </span>
+       
+      <span
+        className="token function-variable"
+        style={
+          Object {
+            "color": "#b58900",
+          }
+        }
+      >
+        md2React
+      </span>
+       
+      <span
+        className="token operator"
+        style={Object {}}
+      >
+        =
+      </span>
+       
+      <span
+        className="token parameter"
+        style={Object {}}
+      >
+        mdText
+      </span>
+       
+      <span
+        className="token arrow operator"
+        style={Object {}}
+      >
+        =&gt;
+      </span>
+      
+  processor
+    
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        .
+      </span>
+      <span
+        className="token method property-access"
+        style={
+          Object {
+            "color": "#b58900",
+          }
+        }
+      >
+        run
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        (
+      </span>
+      processor
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        .
+      </span>
+      <span
+        className="token method property-access"
+        style={
+          Object {
+            "color": "#b58900",
+          }
+        }
+      >
+        parse
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        (
+      </span>
+      mdText
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        )
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        )
+      </span>
+      
+    
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        .
+      </span>
+      <span
+        className="token method property-access"
+        style={
+          Object {
+            "color": "#b58900",
+          }
+        }
+      >
+        then
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        (
+      </span>
+      <span
+        className="token parameter"
+        style={Object {}}
+      >
+        node
+      </span>
+       
+      <span
+        className="token arrow operator"
+        style={Object {}}
+      >
+        =&gt;
+      </span>
+       renderer
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        .
+      </span>
+      <span
+        className="token method property-access"
+        style={
+          Object {
+            "color": "#b58900",
+          }
+        }
+      >
+        create
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        (
+      </span>
+      <span
+        className="token operator"
+        style={Object {}}
+      >
+        &lt;
+      </span>
+      <span
+        className="token maybe-class-name"
+        style={Object {}}
+      >
+        Tree
+      </span>
+       node
+      <span
+        className="token operator"
+        style={Object {}}
+      >
+        =
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        {
+      </span>
+      node
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        }
+      </span>
+       
+      <span
+        className="token operator"
+        style={Object {}}
+      >
+        /
+      </span>
+      <span
+        className="token operator"
+        style={Object {}}
+      >
+        &gt;
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        )
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        .
+      </span>
+      <span
+        className="token method property-access"
+        style={
+          Object {
+            "color": "#b58900",
+          }
+        }
+      >
+        toJSON
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        (
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        )
+      </span>
+      <span
+        className="token"
+        style={
+          Object {
+            "color": "#586e75",
+          }
+        }
+      >
+        )
+      </span>
+    </code>
+  </pre>
+</div>
+`;
+
 exports[`it renders headers 1`] = `
 <section
   className="section1"
