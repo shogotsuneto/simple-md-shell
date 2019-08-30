@@ -36,7 +36,7 @@ const components = {
 const TableComponent = ({ node, align, isHead, renderChild }) => {
   const { type } = node
   return React.createElement(
-    components[type] || (() => renderChild({ node })),
+    components[type] || renderChild,
     { node, align, isHead, renderChild }
   )
 }
