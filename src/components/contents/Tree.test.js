@@ -32,7 +32,7 @@ const ruby = `
 const table = `
 | foo | bar | baz |
 | :-- | :-: |  -   |
-| qux | quux | corge |
+| qux | ｜quux《nested》 | corge |
 `
 
 const md2React = mdText =>

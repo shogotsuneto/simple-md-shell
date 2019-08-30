@@ -121,7 +121,12 @@ exports[`it renders table 1`] = `
       <td
         className="cell-align-center"
       >
-        quux
+        <ruby>
+          quux
+          <rt>
+            nested
+          </rt>
+        </ruby>
       </td>
       <td
         className="cell-align-null"
