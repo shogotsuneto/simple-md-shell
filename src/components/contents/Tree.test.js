@@ -44,6 +44,8 @@ const codeblock = [
   '```'
 ].join('\n')
 
+const inlineCode = 'it should render `inline code` properly'
+
 const md2React = mdText =>
   processor
     .run(processor.parse(mdText))
@@ -71,4 +73,8 @@ test('it renders table', () => {
 
 test('it renders codeblock', () => {
   md2React(codeblock).then(tree => expect(tree).toMatchSnapshot())
+})
+
+test('it renders inline code', () => {
+  md2React(inlineCode).then(tree => expect(tree).toMatchSnapshot())
 })

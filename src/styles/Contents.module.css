@@ -63,3 +63,10 @@ td {
   padding: 10pt;
   margin: 0 auto;
 }
+
+.inline-code {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  color: rgb(101, 123, 131);
+  background-color:rgb(253, 246, 227);
+}
