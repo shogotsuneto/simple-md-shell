@@ -439,6 +439,18 @@ exports[`it renders headers 1`] = `
 </section>
 `;
 
+exports[`it renders inline code 1`] = `
+<p>
+  it should render 
+  <code
+    className="inline-code"
+  >
+    inline code
+  </code>
+   properly
+</p>
+`;
+
 exports[`it renders paragraphs 1`] = `
 Array [
   <p>

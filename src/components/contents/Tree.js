@@ -3,6 +3,7 @@ import Section from './Section'
 import Heading from './Heading'
 import Table from './Table'
 import Code from './Code'
+import styles from '../../styles/Contents.module.css';
 
 const components = {
   root: ({ node: { children } }) => (
@@ -24,13 +25,15 @@ const components = {
   ),
   break: () => <br />,
   table: ({ node }) => <Table node={node} renderChild={({node}) => <Tree node={node} />} />,
-  code: ({ node: { value, lang } }) => <Code language={lang} codeString={value} />
+  code: ({ node: { value, lang } }) => <Code language={lang} codeString={value} />,
+  inlineCode: ({ node: { value }}) => <code className={styles['inline-code']}>{value}</code>
 }
 
 const renderChildNodes = children =>
   children.map((node, index) => <Tree key={`${index}`} node={node} />)
 
 const Tree = ({ node }) => {
+  if (!components[node.type]) console.log(node)
   return components[node.type]
     ? React.createElement(components[node.type], { node })
     : null
