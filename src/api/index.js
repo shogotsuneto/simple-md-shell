@@ -10,6 +10,6 @@ export const fetchRawContent =  (filepath) =>
   fetch(`${baseUrl.raw}/${owner}/${repo}/${branch}/${filepath}`)
     .then(response => response.text())
 
-export const fetchContentsList = () => 
-  fetch(`${baseUrl.api}/repos/${owner}/${repo}/contents?ref=${branch}`)
+export const fetchContentsList = (path = undefined) => 
+  fetch(`${baseUrl.api}/repos/${owner}/${repo}/contents${path ? `/${path}` : '' }?ref=${branch}`)
     .then(response => response.json())
