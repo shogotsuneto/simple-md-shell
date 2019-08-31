@@ -12,7 +12,7 @@ const Container = ({ filepath }) => {
 
   useEffect(() => {
     setIsLoading(true)
-    fetchRawContent(filepath).then(data => setRaw(data))
+    fetchRawContent(decodeURIComponent(filepath)).then(data => setRaw(data))
   }, [filepath])
   useEffect(() => {
     processor.run(processor.parse(raw)).then(node => {
