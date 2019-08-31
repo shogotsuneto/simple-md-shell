@@ -5,10 +5,9 @@ import Header from './components/Header'
 import TableOfContents from './components/TableOfContents'
 import Container from './components/Container'
 
-const owner = 'shogotsuneto'
-const repo = 'md-contents'
-const branch = 'master'
-const initialPath = 'README.md'
+import githubInfo from './github-info'
+
+const { initialPath } = githubInfo
 
 function App() {
   return (
@@ -17,21 +16,13 @@ function App() {
       <Route
         path='/'
         render={({ history }) => (
-          <TableOfContents
-            owner={owner}
-            repo={repo}
-            branch={branch}
-            setCurrent={path => history.push(path)}
-          />
+          <TableOfContents setCurrent={path => history.push(path)} />
         )}
       />
       <Route
         path='/:filepath'
         children={({ match }) => (
           <Container
-            owner={owner}
-            repo={repo}
-            branch={branch}
             filepath={match ? match.params.filepath : initialPath}
           />
         )}
