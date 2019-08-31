@@ -56,7 +56,7 @@ const TableOfContents = ({ setCurrent }) => {
   return (
     <DirItem
       isRoot
-      item={{ name: 'リポ', path: '/' }}
+      item={{ name: 'リポ', path: null }}
       onClick={setCurrent}
     />
   )
