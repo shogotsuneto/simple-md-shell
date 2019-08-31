@@ -26,25 +26,13 @@ function App() {
         )}
       />
       <Route
-        exact
-        path='/'
-        render={() => (
-          <Container
-            owner={owner}
-            repo={repo}
-            branch={branch}
-            filepath={initialPath}
-          />
-        )}
-      />
-      <Route
         path='/:filepath'
-        render={({ match }) => (
+        children={({ match }) => (
           <Container
             owner={owner}
             repo={repo}
             branch={branch}
-            filepath={match.params.filepath}
+            filepath={match ? match.params.filepath : initialPath}
           />
         )}
       />
